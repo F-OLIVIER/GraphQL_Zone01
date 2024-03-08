@@ -131,7 +131,6 @@ async function fetchData() {
     if (dataUserLevel.errors !== undefined) {
         console.log("Error : ", dataUserLevel.errors); // error
     }
-    console.log('dataUserLevel : ', dataUserLevel)
     user.lvl = dataUserLevel.data.user[0].events[0].level;
 
     // requeté d'xp utilisateur (table transaction)
@@ -362,7 +361,8 @@ function MAJpage(user) {
 
     logout.addEventListener('click', () => {
         // window.location.href = 'https://f-olivier.github.io/GraphQL_Zone01/';
-        location.reload;
+        // location.reload;
+        window.location = document.location;
     });
 }
 
