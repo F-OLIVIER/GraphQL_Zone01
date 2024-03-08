@@ -9,6 +9,10 @@ let options = {
 
 function home() {
     let container = document.getElementById('container');
+    while (container.firstChild) {
+        container.removeChild(container.firstChild);
+    }
+    container.innerHTML = '';
     container.classList.add('home');
 
     let divError = document.createElement('div');
@@ -131,6 +135,7 @@ async function fetchData() {
     if (dataUserLevel.errors !== undefined) {
         console.log("Error : ", dataUserLevel.errors); // error
     }
+    // console.log('dataUserLevel : ', dataUserLevel)
     user.lvl = dataUserLevel.data.user[0].events[0].level;
 
     // requeté d'xp utilisateur (table transaction)
@@ -360,11 +365,8 @@ function MAJpage(user) {
     container.appendChild(divgraph);
 
     logout.addEventListener('click', () => {
-        // window.location.href = 'https://f-olivier.github.io/GraphQL_Zone01/';
-        // location.reload;
-        window.location = document.location;
+        home();
     });
 }
 
-// 
-// https://pages.github.com
+
