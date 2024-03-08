@@ -361,7 +361,7 @@ function MAJpage(user) {
     container.appendChild(divgraph);
 
     logout.addEventListener('click', () => {
-        window.location.reload;
+        window.location.href = 'https://f-olivier.github.io/GraphQL_Zone01/';
     });
 }
 
