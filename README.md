@@ -10,6 +10,10 @@ Le projet demande la création de graphique [svg](https://developer.mozilla.org/
 _______
 <img src="./screen.png">
 
+### Usage
+_______
+Page hébergé via [GitHub Pages](https://pages.github.com)<br>
+Lien d'accées : [https://f-olivier.github.io/GraphQL_Zone01/](https://f-olivier.github.io/GraphQL_Zone01/)
 
 ### Dépendance
 _______
